@@ -6,3 +6,8 @@ before_build:
 build:
   verbosity: minimal
   project: ASP.NET-MVC\ContosoUniversity\ContosoUniversity\ContosoUniversity.sln
+  
+after_test: 
+  - ASP.NET-MVC\ContosoUniversity\ContosoUniversity\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"ASP.NET-MVC\ContosoUniversity\ContosoUniversity\packages\NUnit.ConsoleRunner.3.6.0\tools\nunit3-console.exe" -targetargs:"/domain:single  ASP.NET-MVC\ContosoUniversity\ContosoUniversity\ContosoUniversity.Tests\bin\Debug\ContosoUniversity.Tests.dll" -output:coverage.xml
+
+  - ASP.NET-MVC\ContosoUniversity\ContosoUniversity\packages\coveralls.io.1.3.4\tools\coveralls.net.exe --opencover coverage.xml
