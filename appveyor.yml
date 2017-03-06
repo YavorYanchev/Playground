@@ -1,7 +1,7 @@
 version: 1.0.{build}
 
 before_build:
-- ps: nuget ASP.NET-MVC\ContosoUniversity\ContosoUniversity\ContosoUniversity.sln
+- ps: nuget restore ASP.NET-MVC\ContosoUniversity\ContosoUniversity\ContosoUniversity.sln
 
 build:
   verbosity: minimal
