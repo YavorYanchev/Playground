@@ -1,2 +1,2 @@
 Learning DI
-by following examples from the book
+by following examples from the book,blogs and other places
