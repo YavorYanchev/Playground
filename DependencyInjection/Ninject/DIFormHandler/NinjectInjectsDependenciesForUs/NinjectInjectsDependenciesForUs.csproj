@@ -49,9 +49,13 @@
   <ItemGroup>
     <Compile Include="Bindings.cs" />
     <Compile Include="FormHandler.cs" />
-    <Compile Include="IMailSender.cs" />
-    <Compile Include="MailSender.cs" />
-    <Compile Include="MockMailSender.cs" />
+    <Compile Include="IFormHandler.cs" />
+    <Compile Include="Logging\ILogging.cs" />
+    <Compile Include="Logging\Logging.cs" />
+    <Compile Include="Logging\MockLogging.cs" />
+    <Compile Include="Mailing\IMailSender.cs" />
+    <Compile Include="Mailing\MailSender.cs" />
+    <Compile Include="Mailing\MockMailSender.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
