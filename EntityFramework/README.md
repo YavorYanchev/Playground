@@ -1,1 +1,1 @@
-EntityFramework playground
+EntityFramework playground containing different examples
